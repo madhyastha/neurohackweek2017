@@ -1,14 +1,13 @@
 ---
-title: "What are Amazon Web Services and Why Do I Care?"
+title: "What are Amazon Web Services?"
 teaching: 15
 exercises: 0
 questions:
 - "See Title"
 objectives:
 - "Understand why we would want to use cloud computing"
+- "Log on with neurohackweek credentials"
 keypoints:
-- 
-
 - AWS reduces time to science
 - AWS is probably cheaper than purchasing and maintaining dedicated hardware
 
@@ -51,16 +50,16 @@ charges appearing on your credit card.
 
 ### Logging in to the AWS console using your neurohackweek credentials
 
-Go to the web site https://uwcloudczar.signin.aws.amazon.com/console
+Go to the web site [https://uwcloudczar.signin.aws.amazon.com/console](https://uwcloudczar.signin.aws.amazon.com/console)
 You will see a login screen as follows.
 
-![an image]({{site.root}}/fig/CloudCzarLogin.png)
+![an image](fig/CloudCzarLogin.png)
 
 For the User Name and Password, enter the
 user name and password provided to you for this workshop. You will be
 immediately prompted to change this.
 
-![an image]({{site.root}}/fig/ChangePassword.png)
+![an image](fig/ChangePassword.png)
 
 At this point you will find yourself in the AWS management console.
 
@@ -74,6 +73,8 @@ At this point you will find yourself in the AWS management console.
 >each of their students and staff with permissions to perform the tasks
 >needed for their research. The bill, and the breakdown of who used what, can be seen by
 >the lab head.
+[http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html](http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
+
 {: .callout}
 
 
