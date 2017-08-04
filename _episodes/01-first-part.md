@@ -1,81 +1,79 @@
 ---
-title: "An introduction to this lesson"
+title: "What are Amazon Web Services and Why Do I Care?"
 teaching: 15
 exercises: 0
 questions:
-- "What do we need a template for?"
+- "See Title"
 objectives:
-- "Edit lesson materials in the template"
-- "Contribute fixes through Github PRs"
-- "Use the template to create your own lesson"
+- "Understand why we would want to use cloud computing"
 keypoints:
-- We want to use this template to provide lesson materials in an open and useful format.
+- 
 
-- This is in line with our overall goal of making science (including scientific training) more open.
+- AWS reduces time to science
+- AWS is probably cheaper than purchasing and maintaining dedicated hardware
 
 ---
 
-### Neurohackweek is *open*
+### What are Amazon Web Services?
 
-The Neurohackweek event can only accommodate a limited number of participants.
-Nevertheless, we are committed to openness and we are committed to providing our
-materials in an open format, through a publicly accessible website.
+Amazon provides a set of secure computational services (e.g. disk
+space, computers) on a pay-as-you go basis. This incredibly large set
+of services allows one to architect your own computer system "in the
+cloud" (i.e., in remote and centralized data centers). You can create
+a virtual computer system and then destroy it, paying only for the
+time you use it and for the storage you occupy. In Neurohackweek we
+will discuss only three or four of the thousands of services available.
 
-### Using a template allows to create websites for each of the lectures
+### Why do we want to use cloud computing, particularly in neurohackweek?
 
-To enable access to the materials in an open format, but allow different
-instructors freedom in constructing their own materials, we provide a template
-(you're looking at it!), that can be relatively easily adapted to create lesson
-materials for many different lessons
+AWS is handy for many reasons. First, you are probably used to having
+your own computer on your desk, ready for when you need it. If you
+have had the experience of sharing a large cluster with others, you
+know what it is like to have to submit a job and wait for it to
+execute. You feel happy if it completes before you've forgotten what
+you were doing. AWS takes care of the sharing and gives you the resources
+that you need to complete your job on demand. You pay for the
+resources that you use.
 
-To create a new lesson out of the template
+Not only does this reduce your wait time and improve strained relationships
+with cluster hogging co-workers, but it is cost-effective. When you purchase
+a computer, you are paying for all the time that that computer could
+potentially be used (and cost of a service contract, a system
+administrator, housing it, cooling it, keeping
+it powered up and networked). For most analyses, you only need a small
+fraction of that time. 
 
-### Template lesson files are markdown files
-
-* They are in the `_episodes` folder.
-* They are named sequentially:
-  - `01-first-part.md`
-  - `02-second-part.md`
-  - etc
-
-
-### Markdown format allows you to create nice web-pages
-
-And with only a really small amount of effort! It's text based, so you can
-write exactly what you intend to say.
-
-If you want to introduce a block of code into your lesson, write a block
-fenced by triple-tilde. Here is an example of that
-
-~~~
-import nibabel as nib
-img = nib.load('my_file.nii.gz')
-affine = img.affine
-~~~
-{: .python}
+Practically, in neurohackweek AWS will provide you the computers and
+storage that you need to conduct your analyses. We will give you
+login information so that you can learn how to use AWS without worrying about
+charges appearing on your credit card. 
 
 
-Images can be embedded into the lesson plan, by using the following syntax:
+### Logging in to the AWS console using your neurohackweek credentials
 
-![an image]({{site.root}}/fig/nhw-logo.png)
+Go to the web site https://uwcloudczar.signin.aws.amazon.com/console
+You will see a login screen as follows.
 
-To embed images, you will also want to copy the image file into the
-`fig` folder of the repository, and add that.
+![an image]({{site.root}}/fig/CloudCzarLogin.png)
 
-> ## Exercises and challenges (click on the arrow to the right to open)
->
->  Boxes with "challenges" can be interleaved with the lesson materials.
->  Consider adding a challenge every 15 minutes or so.
->    - This helps participants stay engaged.
->    - It surfaces questions that learners have as they go along.
->    - It breaks up the instruction, providing a bit of a diversion.
->    - It gives people a chance to engage in peer instruction, which is
->      is [known to help learning](https://en.wikipedia.org/wiki/Peer_instruction).
-{: .challenge}
+For the User Name and Password, enter the
+user name and password provided to you for this workshop. You will be
+immediately prompted to change this.
 
+![an image]({{site.root}}/fig/ChangePassword.png)
 
-> ## Callouts
-> If you want to introduce a box with a "callout", use this syntax
-> This is useful for materials that you think of as explanatory asides
-> I usually use this for extra material that is "optional".
+At this point you will find yourself in the AWS management console.
+
+![an image]({{site.root}}/fig/AfterLogin.png)
+
+>## If you want to know more
+>Your credentials indicate that you are an "Identity and Access
+>Management" (IAM) user within the UW cloudczar account. IAM is a web
+>service that allows you to create users under your account and limit
+>what they can do. For example, a lab head might create IAM users for
+>each of their students and staff with permissions to perform the tasks
+>needed for their research. The bill, and the breakdown of who used what, can be seen by
+>the lab head.
 {: .callout}
+
+
