@@ -1,15 +1,15 @@
 ---
 title: "What are Amazon Web Services?"
-teaching: 15
-exercises: 0
-questions:
+teaching: 15 
+exercises: 0 
+questions: 
 - "And why do we care?"
-objectives:
+objectives: 
 - "Understand why we would want to use cloud computing"
 - "Log on with neurohackweek credentials"
-keypoints:
-- AWS reduces time to science
-- AWS is probably cheaper than purchasing and maintaining dedicated hardware
+keypoints: 
+- AWS reduces time to science 
+- For large and bursty neuroimaging workloads, AWS is probably cheaper than purchasing and maintaining dedicated hardware 
 
 ---
 

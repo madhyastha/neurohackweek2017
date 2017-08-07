@@ -6,8 +6,8 @@ questions:
 objectives:
 - "Learn how to navigate the console to find important information"
 keypoints:
-- "We can add parts to the lesson, by adding more markdown files"
-- "You get the picture"
+- "Note that the console is organized by region"
+- "You can start virtual computers from the console using the EC2 service"
 ---
 
 ### Orientation to the AWS Management Console
@@ -22,29 +22,17 @@ out, view your billing information, account information, and other
 important things.
 
 2. AWS has a concept of availability zones (AZs) and regions. Here,
-what you see is the region (Ohio). I have no idea why UWCloudCzar
-selected Ohio.  At
-any rate, within the Ohio region (indeed, within each region that you
+what you see is the region (Ohio). 
+At any rate, within the Ohio region (indeed, within each region that you
 can see by the menu you can pull down with the arrow) there are multiple secretly located
 and incredibly secure data centers. These are called AZs.
-
 The main reason you care about your region is because when you start
 machines or use storage, you do so in a region. Later, when you look
 at what machines you have running or what storage you are using, you
 need to make sure that you check each region separately by navigating
-through this region menu. At this point, it is sufficient to make sure
-that you do everything in a single region.
-
->## If you want to know more 
-> Regions and AZs give provide a lot of flexibility to architect computer 
-> systems that will be available even if natural disasters take out 
-> power to large portions of a region. 
->
->To learn more about the differerent AZs and regions you can look at 
->AWS documentation here: 
->[https://aws.amazon.com/about-aws/global-infrastructure/] (
-https://aws.amazon.com/about-aws/global-infrastructure/) 
-
+through this region menu. At this point, the first thing that you
+should do is to change it to Oregon, because you will not have
+permissions to launch instances in Ohio.
 
 3. Here you will see the icons for  AWS services that you have
    recently used. I've been playing around already (so much for
@@ -57,6 +45,18 @@ https://aws.amazon.com/about-aws/global-infrastructure/)
 
 ![an image]({{site.root}}/fig/AWSServicesOrientation.png) 
 
+>## If you want to know more 
+> Regions and AZs give provide a lot of flexibility to architect computer 
+> systems that will be available even if natural disasters take out 
+> power to large portions of a region. 
+>
+>To learn more about the differerent AZs and regions you can look at 
+>AWS documentation here: 
+>[https://aws.amazon.com/about-aws/global-infrastructure/] (
+https://aws.amazon.com/about-aws/global-infrastructure/) 
+{: .callout}
+
+
 ### The EC2 Dashboard
 
 To start a virtual computer in the cloud, or an instance, you need to
@@ -67,14 +67,12 @@ the Services menu.
 
 You will see the dashboard shown below. Key things to observe:
 
-1. Note your region is Ohio. The EC2 resources shown are being used in
-this region. You can also have EC2 resources in other regions. You can
-change the region here to look at usage of resources in other
-regions, but make sure to go back to Ohio.
+1. Note your region is Oregon. The EC2 resources shown are being used in
+this region. You can also have EC2 resources in other regions. 
 
 2. Listed here are the resources that you are using. Critically, note
    that there are two running instances. This means that I have two
-   virtual machines running in the Ohio region. *Note that what you see
+   virtual machines running in the Oregon region. *Note that what you see
    may be different; these instances belong collectively to all the
    students who are users under UWCloudCzar's account.
 
@@ -84,6 +82,9 @@ regions, but make sure to go back to Ohio.
    Finally, you have 2 security groups. A security group has rules
    that allow traffic to or from associated instances (i.e., to
    prevent break-ins).
+
+3. On the leftmost menu bar are links to get to some of the pages that
+   you can access from (2). We will refer to this navigation bar later. 
 
 ![an image]({{site.root}}/fig/EC2Console.png) 
 
