@@ -75,7 +75,6 @@ At this point you will find yourself in the AWS management console.
 >needed for their research. The bill, and the breakdown of who used what, can be seen by
 >the lab head.
 [http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html](http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
-
 {: .callout}
 
 
