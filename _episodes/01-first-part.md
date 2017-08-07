@@ -3,7 +3,7 @@ title: "What are Amazon Web Services?"
 teaching: 15
 exercises: 0
 questions:
-- "See Title"
+- "And why do we care?"
 objectives:
 - "Understand why we would want to use cloud computing"
 - "Log on with neurohackweek credentials"
@@ -25,8 +25,8 @@ will discuss only three or four of the thousands of services available.
 
 ### Why do we want to use cloud computing, particularly in neurohackweek?
 
-AWS is handy for many reasons. First, you are probably used to having
-your own computer on your desk, ready for when you need it. If you
+AWS is useful for many reasons. First, you are probably used to having
+your own computer, ready for you when you need it. If you
 have had the experience of sharing a large cluster with others, you
 know what it is like to have to submit a job and wait for it to
 execute. You feel happy if it completes before you've forgotten what
@@ -44,8 +44,8 @@ fraction of that time.
 
 Practically, in neurohackweek AWS will provide you the computers and
 storage that you need to conduct your analyses. We will give you
-login information so that you can learn how to use AWS without worrying about
-charges appearing on your credit card. 
+login credentials so that you can learn how to use AWS without worrying about
+having to provide a credit card.
 
 
 ### Logging in to the AWS console using your neurohackweek credentials
@@ -53,13 +53,14 @@ charges appearing on your credit card.
 Go to the web site [https://uwcloudczar.signin.aws.amazon.com/console](https://uwcloudczar.signin.aws.amazon.com/console)
 You will see a login screen as follows.
 
-![an image](fig/CloudCzarLogin.png)
+![an image]({{site.root}}/fig/CloudCzarLogin.png)
 
 For the User Name and Password, enter the
 user name and password provided to you for this workshop. You will be
-immediately prompted to change this.
+immediately prompted to change your password.
 
-![an image](fig/ChangePassword.png)
+![an image]({{site.root}}/fig/ChangePassword.png)
+
 
 At this point you will find yourself in the AWS management console.
 
