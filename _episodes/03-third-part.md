@@ -2,10 +2,11 @@
 title: "Launching an EC2 Instance"
 teaching: 15 
 exercises: 0 
-questions: 
+questions:
+- "How  do we start EC2 instances"
 objectives: 
 - "Learn how to launch an EC2 instance and log in to it"
--"Learn how to stop this instance"
+- "Learn how to stop this instance"
 keypoints: 
 - "AWS EC2 instances with a wide range of software can be started on demand"
 
@@ -59,14 +60,14 @@ select step 3, Configure instance.
 ![an image]({{site.root}}/fig/Step2Type.png)
 
 >## If you want to know more
-> You can read more about instance types
-> [https://aws.amazon.com/ec2/instance-types/](https://aws.amazon.com/ec2/instance-types/).
-> For neuroimaging processing, you probably will be best off with
-> either the Compute Optimized or Memory Optimized types. Start with
-> the Compute Optimized unless you know or learn that your application
-> doesn't fit into the memory available on those instance
-> types. Otherwise, if you have a GPU accelerated application, you can
-> look at the Accelerated Computing instances.
+>You can read more about instance types
+>[https://aws.amazon.com/ec2/instance-types/](https://aws.amazon.com/ec2/instance-types/).
+>For neuroimaging processing, you probably will be best off with
+>either the Compute Optimized or Memory Optimized types. Start with
+>the Compute Optimized unless you know or learn that your application
+>doesn't fit into the memory available on those instance
+>types. Otherwise, if you have a GPU accelerated application, you can
+>look at the Accelerated Computing instances.
 
 
 For the moment, you can leave all these settings alone and move on to

@@ -7,9 +7,16 @@ questions:
 objectives:
 - "Recap what you've learned"
 keypoints:
-- "A summary of everything so far"
+- "You should be familar with the AWS console"
+- "You should be able to start an EC2 instance"
 ---
 
-## Markdown again
+## Summary
 
-Write what you would like to say in the summary.
+These exercises are intended just to get you familiar with the AWS
+console and launching EC2 instances. However, there is much that we
+haven't covered. You will probably need to start clusters and copy
+data to and from the machine. We will discuss how to do that during
+Neurohackweek and you will have ample time practice with less
+restrictive credentials!
+
