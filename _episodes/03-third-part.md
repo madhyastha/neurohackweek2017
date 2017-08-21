@@ -1,9 +1,11 @@
 ---
-title: "Launching an EC2 Instance"
+title: "Launching, Logging in to, and Stopping an EC2 Instance"
 teaching: 15 
 exercises: 0 
 questions:
 - "How  do we start EC2 instances"
+- "How  do we log on to an EC2 instance"
+- "How  do we stop an EC2 instance"
 objectives: 
 - "Learn how to launch an EC2 instance and log in to it"
 - "Learn how to stop this instance"
@@ -59,8 +61,8 @@ select step 3, Configure instance.
 
 ![an image]({{site.root}}/fig/Step2Type.png)
 
->## If you want to know more
->You can read more about instance types
+>## If you want to know more 
+>You can read more about instance types 
 >[https://aws.amazon.com/ec2/instance-types/](https://aws.amazon.com/ec2/instance-types/).
 >For neuroimaging processing, you probably will be best off with
 >either the Compute Optimized or Memory Optimized types. Start with
@@ -124,6 +126,8 @@ you to access an EC2 instance. If you are following along this
 tutorial for the first time you will not have an existing key
 pair. You will need to choose "Create a new key pair".
 
+![an image]({{site.root}}/fig/KeyPair.png)
+
 Note that when you do that, you see a little blue warning telling you
 that you need to download the private key file (*.pem) to a secure and
 accessible location. If you don't do this, you won't be able to log on
@@ -132,5 +136,49 @@ to your instance.
 Give your key pair a meaningful name  and download it to somewhere you
 can find it on your computer.
 
-![an image]({{site.root}}/fig/KeyPair.png)
+You must also change permissions on the key pair to make sure that it
+is not publicly viewable. Here, I have put my key in my directory `~/.ssh`
 
+```bash
+chmod 400 ~/.ssh/tara-newkey.pem
+```
+### Logging in to your EC2 Instance
+
+Once you have launched your instance, note the instance ID. This will
+help you to identify your instance in the future. 
+
+![an image]({{site.root}}/fig/InstanceID.png)
+
+If you click on it, 
+you will see some details about it, including a public IP address. 
+
+![an image]({{site.root}}/fig/IPaddress.png)
+
+Now you can log in to your instance with the following command.
+
+```bash
+ssh -i ~/.ssh/tara-newkey.pem ec2-user@52.25.114.94
+```
+Note that the default user is `ec2-user`. This is because we started
+an Amazon Linux instance. The default user name for an Ubuntu instance
+is `ubuntu` or `root`.
+
+
+>## If you want to know more 
+>You can read more about logging on to your Linux instance
+>[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
+
+### Stopping and Terminating an EC2 Instance
+When you are done with your EC2 instance, either for the day or for
+ever, you should shut it down to avoid being unnecessarily charged
+(although for this tutorial you will not be charged)!
+
+Stopping an instance stops it from incurring charges (except for any
+volumes that it uses). Terminating an instance removes it, and
+normally also removes its storage.
+
+You can also reboot the instance, which is just like an operating
+system reboot. These options are visible in the *Action* menu,
+shown below.
+
+![an image]({{site.root}}/fig/ActionsIn.png)
