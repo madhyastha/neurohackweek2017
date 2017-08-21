@@ -21,9 +21,7 @@ To launch an EC2 instance, you can click on the blue "Launch Instance"
 button from the EC2 dashboard. This will bring up the "Step 1: Choose
 an Amazon Machine Image (AMI)" dashboard as shown below.
 
-<kbd>
 ![an image]({{site.root}}/fig/Step1AMI.png)
-</kbd>
 
 An AMI is a template that describes (probably most importantly) the
 operating system that you wish to run and the applications that should
@@ -63,16 +61,18 @@ select step 3, Configure instance.
 
 ![an image]({{site.root}}/fig/Step2Type.png)
 
+
 >## If you want to know more 
 >You can read more about instance types 
 >[https://aws.amazon.com/ec2/instance-types/](https://aws.amazon.com/ec2/instance-types/).
+>
 >For neuroimaging processing, you probably will be best off with
 >either the Compute Optimized or Memory Optimized types. Start with
 >the Compute Optimized unless you know or learn that your application
 >doesn't fit into the memory available on those instance
 >types. Otherwise, if you have a GPU accelerated application, you can
 >look at the Accelerated Computing instances.
-
+{: .callout}
 
 For the moment, you can leave all these settings alone and move on to
 step 4, "Add Storage". AWS instances can have different types of
@@ -156,6 +156,7 @@ chmod 400 ~/.ssh/tara-newkey.pem
 >## If you want to know more
 > You can learn more about creating a key pair at
 >[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair)
+{: .callout}
 
 ### Logging in to your EC2 Instance
 
@@ -182,6 +183,7 @@ is `ubuntu` or `root`.
 >## If you want to know more 
 >You can read more about logging on to your Linux instance
 >[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
+{: .callout}
 
 ### Stopping and Terminating an EC2 Instance
 When you are done with your EC2 instance, either for the day or for

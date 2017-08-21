@@ -3,6 +3,7 @@ title: "Getting familiar with the AWS Console"
 teaching: 5
 exercises: 15
 questions:
+- "How to find your way around the AWS console"
 objectives:
 - "Learn how to navigate the console to find important information"
 keypoints:
@@ -52,8 +53,7 @@ permissions to launch instances in Ohio.
 >
 >To learn more about the differerent AZs and regions you can look at 
 >AWS documentation here: 
->[https://aws.amazon.com/about-aws/global-infrastructure/] (
-https://aws.amazon.com/about-aws/global-infrastructure/) 
+>[https://aws.amazon.com/about-aws/global-infrastructure/] (https://aws.amazon.com/about-aws/global-infrastructure/) 
 {: .callout}
 
 
