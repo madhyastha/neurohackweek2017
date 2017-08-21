@@ -165,7 +165,7 @@ help you to identify your instance in the future.
 If you click on it, 
 you will see some details about it, including a public IP address. 
 
-![an image]({{site.root}}/fig/IPaddress.png)
+![an image]({{site.root}}/fig/IPAddress.png)
 
 Now you can log in to your instance with the following command.
 
