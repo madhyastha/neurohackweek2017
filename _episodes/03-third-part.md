@@ -115,6 +115,15 @@ instances and volumes.
 
 ![an image]({{site.root}}/fig/Step5Tags.png)
 
+Step 6 is to "Configure Security Group". A security group describes
+rules that control network traffic in and out of your instance. A
+specific security group, "neurohackweek", has been set up for you. You
+should select this security group by choosing the radio button "Select
+an existing security group" and scrolling through the list of groups
+until you see the neurohackweek group.
+
+![an image]({{site.root}}/fig/Step6SecurityGroup.png)
+
 Now you can click on "Review and Launch".
 You will need to review your instance launch details, but you can move
 forward to Launch. Note that you will get a message saying that your
@@ -142,6 +151,10 @@ is not publicly viewable. Here, I have put my key in my directory `~/.ssh`
 ```bash
 chmod 400 ~/.ssh/tara-newkey.pem
 ```
+>## If you want to know more
+> You can learn more about creating a key pair at
+>[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair)
+
 ### Logging in to your EC2 Instance
 
 Once you have launched your instance, note the instance ID. This will
