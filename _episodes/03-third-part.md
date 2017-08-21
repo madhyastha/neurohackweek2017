@@ -21,7 +21,9 @@ To launch an EC2 instance, you can click on the blue "Launch Instance"
 button from the EC2 dashboard. This will bring up the "Step 1: Choose
 an Amazon Machine Image (AMI)" dashboard as shown below.
 
+<kbd>
 ![an image]({{site.root}}/fig/Step1AMI.png)
+</kbd>
 
 An AMI is a template that describes (probably most importantly) the
 operating system that you wish to run and the applications that should
